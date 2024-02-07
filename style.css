@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    color: white;
+
+}
+body{
+    margin: 0%;
+}
+.bgimg{
+    background-image: url(./image/hero1.jpg);
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* transform:  rotate(-2deg); */
+}nav{
+    /* background-color: antiquewhite; */
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+
+}
+.divfilter{
+
+    height: auto;
+    width: 100%;
+    backdrop-filter: contrast(100%) blur(2.7px) brightness(80%);
+
+}
+h1 b{
+    color: orange;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.right{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 40%;
+}
+.right p a{
+    text-decoration: none;
+}
+.right p{
+    margin-right: 5%;
+    height: 34px;
+
+    
+}
+.right p:hover{
+    border-bottom: 2px solid orange;
+    transform: scale(1.1);
+    transition: all ease-in-out 0.3s;
+}
+/* .text hr{
+    width: 12%;
+    float: left;
+    height: 3px;
+    border: none;
+    background-color: orange;
+    transform: rotate(-40deg);
+
+} */
+.text{
+    width: 40%;
+}
+.text h1{
+    font-size: 5rcap;
+}
+.text h2{
+    margin-top: -2.6%;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+button{
+    height: 45px;
+    width: 30%;
+    border: none;
+    background-color: black;
+    border: 0.5px solid white;
+    border-top-left-radius:28px;
+    border-top-right-radius:28px;
+    border-bottom-left-radius:28px;
+    border-bottom-right-radius:28px;
+    
+
+}
+button:hover{
+    background-color: rgb(231, 163, 39);
+    cursor: pointer;
+    border: none;
+}
+button:hover i{
+    color: black;
+}
+.img1
+{
+    background-image: url(./image/last.png);
+    height: 500px;
+    width: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: -1.5%;
+    
+    
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:800px) {
+    nav .right{
+        width: 100%;
+        font-size: 1.3rcap;
+    }
+    .main .text{
+        width: 90%;
+    }
+    .main .text h1{
+        font-size: 3rcap;
+    }
+    .main .text h2{
+        font-size: 1.7rcap;
+    }
+    .main .text .p1{
+        width: 90%;
+        font-size: 1.4rcap;
+    }
+    button{
+        width: 35%;
+    }
+    .main .img1{
+        margin-top: 10%;
+    }
+    
+}
+/* sect2 */
+.text1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin-left: -10PX;
+
+
+}
+.text1:HOVER{
+    transition: all ease-in-out 0.6s;
+    transform: skew(20deg);
+
+
+}
+.img2{
+    background-image: url(./image/bb7909ca0e18f79828a3240e57115cca.jpg);
+    height: 500px;
+    width: 170px;
+    background-size: cover;
+    background-position: center;
+    transform: skew(-15deg);
+
+}
+/* .img2:hover{
+    width: 200px;
+    transition: all ease-in-out 0.6s;
+    transform: skew(0deg);
+
+
+} */
+.img3{
+    background-image: url(./image/pexels-photo-3289711.jpg);
+    height: 500px;
+    width: 170px;
+
+    margin-top: 3%;
+    margin-left: 1%;
+    background-size: cover;
+    background-position: left;
+    transform: skew(-15deg);
+    
+
+
+
+}
+/* .img3:hover{
+    transform: skew(0deg);
+
+    width: 200px;
+    transition: all ease-in-out 0.6s;
+
+} */
+.text2 h1,h3,.p2{
+    color: black;
+}
+.text2 h1{
+    font-size: 3.6rcap;
+    text-shadow: 0px 4px 5px rgba(0,0,0,0.6);
+}
+.text2 h3{
+    margin-top: -7%;
+    font-weight: 200;
+}
+.text2{
+    width:40%;
+}
+.outdiv{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap ;
+}
+.but1{
+    height: 45px;
+    width: 30%;
+    border: none;
+    color: black;
+    background-color: white;
+    border: 0.5px solid orange;
+    border-top-left-radius:28px;
+    border-top-right-radius:28px;
+    border-bottom-left-radius:28px;
+    border-bottom-right-radius:28px;
+    
+
+}
+
+@media screen and (max-width:800px) {
+    .img2{
+        height: 400px;
+        width: 140px;
+    }
+    .img3{
+        height: 400px;
+        width: 140px;
+    }
+    .text1{
+        margin-left:8%;
+    }
+    .text2{
+        width: 90%;
+        margin-top: 10%;
+    }
+    .text2 .p2{
+        width: 80%;
+        font-size: 1.4rcap;
+    }
+    .but1{
+        width: 35%;
+    }
+    
+}
