@@ -50,7 +50,8 @@ h1 b{
 }
 .right p:hover{
     border-bottom: 2px solid orange;
-    transform: scale(1.1);
+    transform: scale(0);
+    transform: scale(1);
     transition: all ease-in-out 0.3s;
 }
 /* .text hr{
@@ -249,6 +250,232 @@ button:hover i{
     }
     .but1{
         width: 35%;
+    }
+    
+}
+
+/*  */
+.img4{
+    background-image: url(./image/wp8077581.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+.text5{
+    backdrop-filter: blur(2px) saturate(100%);
+    text-align: center;
+    padding: 15%;
+}
+.text5 h1{
+    text-transform: uppercase;
+    font-size: 4rcap;
+    
+}
+.text5 .p3{
+    margin-top: -2%;
+    opacity: 0.8;
+}
+@media screen and (max-width:800px) {
+    .text5 h1{
+        font-size: 3rcap;
+    }
+    .text5{
+        padding: 23%;
+    }
+    
+}
+
+.sec4{
+    margin-top: 8%;
+}
+.sec4 h2{
+    
+    text-align: center;
+    color: black;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 0px 4px 5px rgba(0,0,0,0.6);
+
+}
+.icon1{
+    height: 250px;
+    width: 350px;
+    box-shadow: -1px 3px 29px -9px rgba(233,158,49,0.75);
+    -webkit-box-shadow: -1px 3px 29px -9px rgba(233,158,49,0.75);
+    -moz-box-shadow: -1px 3px 29px -9px rgba(233,158,49,0.75);    text-align: center;
+}
+.icon1 p i{
+    color: orange;
+    font-size: 2.6rcap;
+    text-shadow: 0px 4px 5px rgba(0,0,0,0.6);
+
+    transform: rotate(-10deg);
+    margin-top: 6%;
+}
+.icon1:hover{
+    box-shadow: -1px 3px 53px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 3px 53px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 53px -9px rgba(0,0,0,0.75);
+    transition: all ease-in 0.3s;
+
+}
+.icon1:hover p i{
+    transform: scale(1.4);
+    transition: all ease-in 0.2s;
+
+    
+
+}
+.icon1 p,h4{
+    color: black;
+}
+.icon1 .p6{
+    opacity: 0.8;
+    width: 70%;
+    margin: auto;
+    font-size: 1.3rcap;
+}
+.icons{ 
+    margin-top: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .icon1{
+        margin-top: 10%;
+    }
+    
+}
+
+/*  */
+.img6{
+    background-image: url(./image/wp8077684.jpg);
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    
+}
+
+.blur{
+
+    height: auto;
+    width: 100%;
+    backdrop-filter: blur(7px) brightness(70%);
+}
+
+.text7{
+    text-align: center;
+    padding: 1%;
+}
+.text7 h1{
+    font-size: 4rcap;
+    text-shadow: 0px 4px 5px rgba(0,0,0,0.6);
+
+}
+.t1{
+    text-align: center;
+    height: 400px;
+    width: 300px;
+}
+
+.t1img{
+    background-image: url(./image/t1.jpg);
+    height: 400px;
+    width: 300px;
+    border-radius: 7%;
+
+}
+.t1img:hover{
+    transform: scale(1.05);
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+}
+.t1:hover h2{
+    color: orange;
+}
+#t2{
+    background-image: url(./image/t2.jpg);
+    height: 400px;
+    width: 300px;
+    border-radius: 7%;
+
+}
+#t2:hover{
+    transform: scale(1.05);
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+}
+#t3{
+    background-image: url(./image/t3.jpg);
+    height: 400px;
+    width: 300px;
+    border-radius: 7%;
+
+}
+#t3:hover{
+    transform: scale(1.05);
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+}
+
+.link{
+    height: 50px;
+    width: 50%;
+    /* text-align: center; */
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius:28px;
+    border-top-right-radius:28px;
+    border-bottom-left-radius:28px;
+    border-bottom-right-radius:28px;
+    position: relative;
+    top: 90%;
+    left: 25%;
+    bottom: 0px;
+
+
+}
+.links1{
+    color: black;
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.links1 p{
+    text-align: center;
+}
+.links1 p i{
+    color: black;
+}
+.links1 p i:hover{
+    color: orange;
+    cursor: pointer;
+}
+.train{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+@media screen and (max-width:800px) {
+    .t1{
+        margin-bottom: 40%;
+    }
+    .train{
+        margin-top: 10% ;
     }
     
 }
