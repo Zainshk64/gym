@@ -6,6 +6,9 @@
 body{
     margin: 0%;
 }
+html{
+    scroll-behavior: smooth;
+}
 .bgimg{
     background-image: url(./image/hero1.jpg);
     height: auto;
@@ -25,8 +28,19 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 10;
+    padding: 0.5%;
 }
 
+/* about */
+#about{
+    padding: 6%;
+}
+#services{
+    padding-top: 7%;
+}
+#cont{
+    padding-top: 6%;
+}
 nav .left{
     margin: 0 5%;
 }
@@ -60,7 +74,7 @@ label{
     }
     nav .right{
         position: absolute;
-        top: 82px;
+        top: 90px;
         right:-100%;
         height: auto;
         width: 70%;
@@ -101,6 +115,15 @@ label{
     #check:checked~ .right{
         display:block;
         right: 0;
+    }
+    #about{
+        padding-top: 18%;
+    }
+    #services{
+        padding-top: 18%;
+    }
+    #cont{
+        padding-top: 18%;
     }
 
 
