@@ -74,18 +74,17 @@ label{
     }
     nav .right{
         position: absolute;
-        top: 90px;
-        right: -100%;
-        height:auto;
-        width: 100%;
-        display: none;
-        filter: brightness(50%) opacity(10px) blur(11px);
-        background: rgba(126, 122, 122, 0.98);
+        top: 88px;
+        right: 0%;
+        height:0;
+        width: 80%;
+        display: block;
+        /* filter: opacity(100px) blur(11px); */
+        background: linear-gradient(rgb(0, 0,0), #ffb82ae0) ;
         text-align: center;
-        /* transition:  ease-in-out 2s; */
+        transition:  ease-in-out .5s;
         overflow: hidden;
-
-        padding-bottom: 3%;
+        /* padding: 16% 0%; */
 
 
 
@@ -93,6 +92,7 @@ label{
     }
     
     nav .right p{
+
         width: min-content;
         text-align: center; 
         margin: auto;
@@ -116,8 +116,9 @@ label{
     }
     #check:checked~ .right{
         display:block;
-        right: 0%;
+        /* right: 0%; */
         height: auto;
+        padding: 16% 0%;
     }
     /* #check:checked~ .right p  a{
         transform: scaleY(0%);
@@ -172,19 +173,49 @@ h1 b{
 }
 .right p{
     margin-right: 5%;
-    height: 27px;
+    height: 38px;
+    /* background-color: antiquewhite; */
+    /* overflow: hidden; */
+    
 
     
 
 }
+.right{
+    overflow: hidden;
+}
 .main{
     padding: 5% 0 0;
 }
-.right p:hover{
+.right p::after{
+    content: "";
+    position: relative;
+    left: -404px;
+    top: 0;
+    z-index: -1;
+    height: 15px;
+    display: block;
+    width: auto;
+    border-bottom: 3px solid orange;
+    /* background-color: aqua; */
+    transition: .4s ease-in;
+
+    
+
+}
+.right p:hover::after{
+    overflow: hidden;
+    
+    width: 100%;
+
+    left: 0;
+    z-index: 1;
+}
+/* .right p:hover{
     border-bottom: 3px solid orange;
 
     transition: all ease-in-out 0.1s;
-}
+} */
 /* .text hr{
     width: 12%;
     float: left;
@@ -431,6 +462,7 @@ button:hover i{
 .icon1{
     height: 250px;
     width: 350px;
+    overflow: hidden;
     box-shadow: -1px 3px 29px -9px rgba(233,158,49,0.75);
     -webkit-box-shadow: -1px 3px 29px -9px rgba(233,158,49,0.75);
     -moz-box-shadow: -1px 3px 29px -9px rgba(233,158,49,0.75);    text-align: center;
@@ -768,3 +800,15 @@ input:focus{
 ::selection{
     background-color: rgba(255, 166, 0, 0.449);
 }
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
